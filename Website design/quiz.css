@@ -1,0 +1,66 @@
+/*~~~design for the questions~~~*/
+input[type=text],textarea,select {
+    display: inline;
+}
+
+label {
+    display: inline-block;
+    font-family: cursive;
+    padding: 0 10% 0 0;  
+}
+
+input,textarea, select {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 1em;
+    font-size: 0.75em;
+}
+
+input:valid+label,textarea:valid+label{
+    display:inline;
+}
+
+input:hover, input:focus,
+textarea:hover, textarea:focus {
+    box-shadow: 1px 1px rgb(51, 51, 51);
+}
+
+/*~~~design for Enter button~~~*/
+#answer {
+    padding: 0 75% 0 0;
+
+}
+#button {
+    background-color: #0c5338;
+    color: rgb(238, 232, 62);
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+/*~~~create box-shadow for each question~~~*/
+div.quiz {
+    box-shadow: 0 4px 8px 0 rgb(212, 183, 87), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+}
+
+main p {
+    padding:2% 2%;
+}
+
+.note{
+    color: rgb(255, 0, 0);
+    font-size: 1.5em;
+}
+
+/*~~~design for images~~~~~~~~*/
+main figure img {
+    max-width: 100%;
+}
+
+main figure {
+    overflow: hidden;
+    width: 100%;
+    float: initial;
+    margin: 0px 0 10px 3%;
+    padding-top:2% ;
+}

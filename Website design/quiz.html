@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>      
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <meta name="author" content="Khanh Linh Tran"> <!--identify myself as the author-->
+    <!--add <meta> tag to size the images correctly on all devices-->
+    <meta name = "viewpoint" content = "width = device-width, initial-scale =1.0"> 
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+    <div id = "wrapper">      
+        <!--simulate a smartphone/tablet-->
+        <header>
+            <!--site logo-->
+            <h1>My Profile</h1>
+        </header>
+
+        <!--top navigation menu-->
+        <nav>
+            <!--navigaiton bar-->
+            <a href="index.html">Home</a>
+            <a href="degree_programme.html">Degree Programme</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="DataVisualisation.html">Data Visualisation</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <main>
+            <p class="note">*Choose/fill in your answers and press button "Enter" to see the correct answers!*</p>
+            <!--first quiz-->
+            <form name="myform">
+                <!--content of the form-->
+                <div class="quiz">
+                    <p>1. Name of the University of Sheffield society who possesses the following logo?</p>
+                        <figure>
+                            <img src="../Images/quiz1.jpg" alt="Image of quiz 1" width="450" height="470">
+                        </figure>
+                    <p>
+                       <label for = "ANSWER-space">Answer: </label>
+                       <input id = "ANSWER-space" type="text" name="ANSWER-space" placeholder="Enter your answer..." maxLength="60" size="40">
+                    </p>
+                </div>
+            </form>
+
+            <!--second quiz-->
+            <form name="myform">
+                <!--content of the form-->
+                <div class="quiz">
+                    <p>2. What is the name of this symbol? </p>
+   
+                        <figure>
+                            <img src="../Images/quiz2.jpg" alt="Image of quiz 2" width="680" height="380">
+                        </figure>
+
+                    <p>
+                        <label>Symbol: </label>
+                        <select name="symbol">
+                            <option value="AND">AND</option>
+                            <option value="OR">OR</option>
+                            <option value="XOR">XOR</option>
+                            <option value="NOR">NOR</option>
+                            <option value="NAND">NAND</option>
+                        </select>
+                    </p>
+                </div>
+            </form>
+            
+            <!--third quiz-->
+            <form name="myform">
+                <!--content of the form-->
+                <div class="quiz">
+                    <p>3. What is the name of the machine test in the following picture?</p>
+               
+                        <figure>
+                            <img src="../Images/quiz3.jpg" alt="Image of quiz 3" width="640" height="400">
+                        </figure>
+                    <p>
+                       <label>Select your option: </label><br>
+        
+                       <input id="Programming-test" type="radio" name="option" value="programming-test">
+                       <label for="Programming-test">Programming test</label>
+          
+                       <input id="Unit-testing" type="radio" name="option" value="unit-testing">
+                       <label for="Unit-testing">Unit testing</label><br>
+          
+                       <input id="Turing-test" type="radio" name="option" value="turing-test">
+                       <label for="Turing-test">Turing test</label>
+          
+                       <input id="Programming-language-test" type="radio" name="option" value="programming-language-test">
+                       <label for="Programming-language-test">Programming Language test</label>
+                    </p>
+                </div>
+            </form>
+
+            <!--button to reveal answer-->
+            <div id="answer">
+                <p id="button">Enter</p>
+            </div>   
+            
+            <!--next and back buttons-->
+            <!--refer to this link: https://www.w3schools.com/howto/howto_css_next_prev.asp-->
+            <div class="transition">
+                <a href="DataVisualisation.html" class="next">Next &raquo;</a>
+                <a href="degree_programme.html" class="back">&laquo; Back</a>
+                <br>
+            </div>
+            <script src="quiz.js"></script>
+        </main>
+
+        <footer>
+            <!--footer of the page-->
+            <p>
+                <a class="access" href="accessibility.html">Accessibility</a>
+            </p>
+
+            <p>
+                &copy; Khanh Linh Tran, 2020 <br>
+                <a href="mailto:kltran1@sheffield.ac.uk">kltran1@sheffield.ac.uk</a><br>
+            </p>
+        </footer>
+
+    </div> <!--wrapper-->
+</body>
+</html>

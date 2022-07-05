@@ -1,0 +1,83 @@
+/*mobile first*/
+.title .box, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+}
+
+/*~~~Responsive layout for larger screen~~~*/
+@media screen and (min-width: 1200px) {
+    .title{
+        float: left;
+        width:25%;
+        margin-top: 0.5%;
+        font-size: 1em;
+    }
+    .box {
+        float: left;
+        width: 75%;
+        margin-top: 0.5%;
+    }
+}
+
+/*~~~for whole page~~~*/
+* {
+    box-sizing: border-box;
+}
+
+/*~~~Design for the contact section~~~*/
+.container {
+    border-radius: 5px;
+    background-color: rgba(190, 49, 49, 0.185);
+    padding: 0 10% 2em 10%;
+}
+
+
+/*design for the form*/
+input[type=text],textarea,select {
+    width: 100%;
+    padding: 2.5%;
+    border: 1px solid #cccccc;
+    margin: 2% 0 6% 0;
+    resize: vertical;
+    font-size: 0.75em;
+}
+
+/*design for "submit" button*/
+input[type=submit] {
+    background-color: transparent;
+    color: rgb(235, 228, 29);
+    padding: 15px 10%;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    box-shadow: 0 5px 10px 0 rgb(212, 183, 87), 0 6px 20px 0 rgba(0,0,0,0.19)
+    
+}
+
+input[type=submit]:hover {
+    background:rgb(11, 3, 48);
+    color: rgb(223, 142, 50);
+}
+
+/*create two columns that float next to each other - label and input*/
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column, input[type=submit] {
+    width: 100%;
+    margin-top:0;
+}
+
+/*~~~design for image~~~*/
+main figure img {
+    max-width: 100%;
+}
+
+main figure {
+    overflow: hidden;
+    width: 100%;
+    float: initial;
+}

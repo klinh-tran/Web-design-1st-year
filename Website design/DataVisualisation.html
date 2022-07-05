@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>      
+    <meta charset="utf-8">
+    <title>Data Visualisation</title>
+    <meta name="author" content="Khanh Linh Tran"> <!--identify myself as the author-->
+    <!--add <meta> tag to size the images correctly on all devices-->
+    <meta name = "viewpoint" content = "width = device-width, initial-scale =1.0">
+
+    <link rel="stylesheet" href="DataVisualisation.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+    <div id = "wrapper">      
+        <!--simulate a smartphone/tablet-->
+        <header>
+            <!--site logo-->
+            <h1>My Profile</h1>
+        </header>
+
+        <!--top navigation menu-->
+        <nav>
+            <!--navigaiton bar-->
+            <a href="index.html">Home</a>
+            <a href="degree_programme.html">Degree Programme</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="DataVisualisation.html">Data Visualisation</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+            <!--table-->
+            <table>
+                <caption>
+                    Hours spent on different modules each day within a week
+                </caption>
+                <tr>
+                    <td></td>
+                    <th>Mon</th>
+                    <th>Tues</th>
+                    <th>Weds</th>
+                    <th>Thurs</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+                
+                <tr>
+                    <th>Com1001 (hours)</th>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+
+                <tr>
+                    <th>Com1003 (hours)</th>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <th>Com1008 (hours)</th>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </table>
+            <!--pie chart-->
+     
+                <canvas id="canvas" width="900" height="600"></canvas>
+                <p>
+                    <button id="clear">Clear</button>
+
+                    <button id="pie1">Pie 1</button>
+                    <button id="pie2">Pie 2</button>
+
+                    <button id="bar1">Bar 1</button>
+                    <button id="bar2">Bar 2</button>
+
+                    <button id="line1">Line 1</button>
+                    <button id="line2">Line 2</button>
+                </p>
+            <script src="DataVisualisation.js"></script>
+                
+            
+        <!--next and back buttons-->
+        <div class="transition">
+            <a href="contact.html" class="next">Next &raquo;</a>
+            <a href="quiz.html" class="back">&laquo; Back</a>
+            <br>
+        </div>
+
+        <footer>
+            <!--footer of the page-->
+            <p>
+                <a class="access" href="accessibility.html">Accessibility</a>
+            </p>
+
+            <p>
+                &copy; Khanh Linh Tran, 2020 <br>
+                <a href="mailto:kltran1@sheffield.ac.uk">kltran1@sheffield.ac.uk</a><br>
+            </p>
+        </footer>
+
+    </div> <!--wrapper-->
+</body>
+</html>

@@ -1,0 +1,27 @@
+/*~~~design for introducing image~~~*/
+main figure img {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+    main figure {
+        overflow: hidden;
+        width: 40%;
+        float: right;
+        margin: 10px 0 10px 3%;
+    }
+}
+
+/*specific design for self-describing content*/
+.paragraph {
+    padding: 2% 5%;
+    width: 100%;
+}
+
+/*design for specific higlighted words or links within the paragraph*/
+span {
+    color: rgb(255, 255, 0);
+}
+span a {
+    color:inherit;
+}

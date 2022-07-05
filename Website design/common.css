@@ -1,0 +1,127 @@
+/*~~~body background~~~*/
+body {
+    background-color: rgba(5, 5, 5, 0.993);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e7fff6;
+    font-size: 2em;
+}
+
+/*mobile first*/
+#wrapper {             
+    width: auto;
+    margin: 0px auto;
+    border: none; 
+    border-radius: 0%;
+}
+
+/*desktop second*/
+@media screen and (min-width: 768px) {
+    #wrapper {
+        width: 99%;
+        border: none;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+    main {
+        padding: 0 12% 0 12%;
+    }
+}
+
+
+/*design for navigation bar*/
+nav {
+    overflow: hidden;
+    position: relative;
+    min-height: 100%;
+    background-color: rgb(255, 231, 11);
+    color:#0c5338;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 0.5em;
+}
+
+nav a {
+    padding: 2px 3%;
+    text-decoration: none;
+    display: inline-block;
+    color: #0c5338;
+    font-size: 1em;
+}
+
+nav a:hover{
+    background:rgb(11, 3, 48);
+    color: rgb(223, 142, 50);
+}
+
+/*~~~header~~~~~~~~~~~~*/
+header {
+    padding: 0%;
+    background-color: #0c5338;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    color:#FAF7AE;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+}
+
+/*~~~next and back buttons~~~*/
+.transition {
+    padding-bottom: 1em;
+}
+
+.next{
+    text-align: right;
+    font-size: 1.5em;
+    float: right;
+    text-decoration: none;
+    color: #e7fff6;;
+    
+}
+
+.next:hover{
+    background:rgb(11, 3, 48);
+    color: rgb(223, 142, 50);
+}
+
+.back{
+    text-align: left;
+    font-size: 1.5em;
+    float: left;
+    text-decoration: none;
+    color: #e7fff6;
+}
+
+.back:hover{
+    background:rgb(11, 3, 48);
+    color:rgb(228,165,94);
+}
+
+/*~~~footer~~~~~~*/
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    border-top: 1px solid white;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.access{
+    text-decoration: none;
+    color: red;
+    font-size: 1.5em;
+    padding-bottom: 2%;
+}
+
+.access:hover {
+    color: yellow;
+    text-decoration: underline;
+}
